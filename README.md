@@ -29,7 +29,7 @@ Note: for a fair comparison, training and testing related hyperparameters are al
 
 ##  Visualization for each Method ## 
 
-![image](https://github.com/RAKIYOU/Second-report-for-compter-vision-class/blob/master/second_report_for_CV/pic1.png)
+![image](https://github.com/RAKIYOU/Data-Augmentation-through-Transforms-Class/blob/master/pic1.png)
 The training ID for this sample is 811 and its label is 3.
 ## Conclusion ##
 (1) A higher accuracy of 89.51% is already available without using any DA method.       
@@ -39,17 +39,17 @@ The training ID for this sample is 811 and its label is 3.
 &emsp; ii) By cropping the central region of the 224\*224 from the 300\*300 image, the peripheral information is missing and   
 &emsp; &emsp;the model has caused interference. Please see the following 7 examples.
                  
-![image](https://github.com/RAKIYOU/Second-report-for-compter-vision-class/blob/master/second_report_for_CV/pic2.png)                 
+![image](https://github.com/RAKIYOU/Data-Augmentation-through-Transforms-Class/blob/master/pic2.png)                 
 (3) For each epoch, model will get different input pictures after randomcrop. After 40 epochs, the number of training   
 &emsp;samples will be greatly increased. Theoretically, the classification accuracy should be increased. But as we can see  
 &emsp;from the following pictures, RandomCrop actually reduces the quality of the training samples, Therefore the decline   
 &emsp;in accuracy is not hard to understand.
   
-![image](https://github.com/RAKIYOU/Second-report-for-compter-vision-class/blob/master/second_report_for_CV/pic3.png)                 
+![image](https://github.com/RAKIYOU/Data-Augmentation-through-Transforms-Class/blob/master/pic3.png)                 
 (4) Randomverticalflip and Randomhorizontalflip also reduce the quality of input samples. For example, 6 turns to be 9  
  &emsp;after flipping, but its label is still 6.    
 (5) In this experiment, random perspective acheives the result of data augumentation.
- ![image](https://github.com/RAKIYOU/Second-report-for-compter-vision-class/blob/master/second_report_for_CV/pic4.png)    
+ ![image](https://github.com/RAKIYOU/Data-Augmentation-through-Transforms-Class/blob/master/pic4.png)    
 As seen in the pictures above, this operation does not reduce the quality of the input image. In addition, the model will get different input pictures for each single epoch, which is equivalent to greatly improving the number of training samples. 
  
 ## Specific Operation for each Data Augmentation Method ##
